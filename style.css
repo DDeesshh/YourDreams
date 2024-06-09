@@ -1,0 +1,511 @@
+/* ------------------контейнер------------------ */
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* ------------------верхушка------------------ */
+
+.first-block-sales {
+    background-color: #060845;
+}
+
+
+/* ------------------шапка------------------ */
+
+/* кнопки слева */
+.nav-buttons-1-main,
+.nav-buttons-1-catalog {
+    transition: 0.5s;
+    border: none;
+    background-color: white;
+}
+
+.nav-buttons-1-main:hover,
+.nav-buttons-1-catalog:hover {
+    -moz-text-shadow: 0 0 10px #001aff;
+    -webkit-text-shadow: 0 0 10px #001AFF;
+    text-shadow: 0 0 10px #001AFF;
+    transform: translateY(3px);
+}
+
+/* кнопки справа */
+.nav-buttons-2-client,
+.nav-buttons-2-basket {
+    width: 84px;
+    height: 84px;
+    background: rgb(3, 4, 37);
+    background: linear-gradient(148deg, rgba(3, 4, 37, 1) 2%, rgba(14, 19, 163, 1) 100%);
+    border-radius: 50%;
+    box-shadow: 0 5px 15px 0 #001AFF;
+    transition: 0.5s;
+    border: none;
+}
+
+.nav-buttons-2-client:hover,
+.nav-buttons-2-basket:hover {
+    box-shadow: 8px 4px 25px 1px #001AFF;
+    transform: translateY(3px);
+}
+
+.nav-buttons-2 {
+    width: 280px;
+}
+
+
+/* ------------------кнопка большая------------------ */
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    width: 308px;
+    height: 85px;
+    text-decoration: none;
+    border-radius: 100px;
+    border: none;
+    box-shadow: 16px 8px 25px 1px #001AFF;
+    transition: 500ms;
+    background-image: linear-gradient(90deg, rgba(3, 4, 37, 1) 0%, rgba(20, 22, 96, 1) 43%, rgba(19, 25, 215, 1) 100%);
+    transition: 500ms;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.button::after {
+    width: 295px;
+    height: 77px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: 'Заказать';
+    font-size: 20px;
+    color: #eee;
+    border-radius: 100px;
+    background-color: rgb(3, 4, 37);
+    transition: 500ms;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.button:hover::after {
+    font-size: 30px;
+    background-color: transparent;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.button:active {
+    transform: translateY(10px);
+}
+
+
+/* ------------------кнопка маленькая------------------ */
+
+.button-little {
+    width: 228px;
+    height: 63px;
+    text-decoration: none;
+    border-radius: 100px;
+    border: none;
+    box-shadow: 16px 8px 25px 1px #001AFF;
+    transition: 500ms;
+    background-image: linear-gradient(90deg, rgba(3, 4, 37, 1) 0%, rgba(20, 22, 96, 1) 43%, rgba(19, 25, 215, 1) 100%);
+    transition: 500ms;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.button-little::after {
+    width: 218px;
+    height: 58px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: 'Подписаться';
+    font-size: 20px;
+    color: #eee;
+    border-radius: 100px;
+    background-color: rgb(3, 4, 37);
+    transition: 500ms;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+.button-little:hover::after {
+    font-size: 20px;
+    background-color: transparent;
+}
+
+.button-little:focus {
+    outline: none;
+}
+
+.button-little:active {
+    transform: translateY(10px);
+}
+
+
+/* ------------------футер------------------ */
+
+#ninth-block {
+    background-color: #060845;
+}
+
+/* форма (карточка) */
+.ninth-block-form-card {
+    width: 685px;
+    height: 268px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 16px 8px 25px 1px #001AFF;
+    background-image: linear-gradient(90deg, rgba(3, 4, 37, 1) 0%, rgba(20, 22, 96, 1) 43%, rgba(19, 25, 215, 1) 100%);
+    z-index: 1;
+}
+
+/* форма-подсветка  формы (карточки) */
+.ninth-block-form-border {
+    width: 674px;
+    height: 273px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(20, 22, 96, 1) 35%, rgba(50, 58, 255, 1) 100%);
+    border: none;
+}
+
+form {
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+/* инпут */
+.ninth-block-form-input {
+    width: 342px;
+    height: 60px;
+    border-radius: 100px;
+    border: none;
+    box-shadow: 16px 8px 25px 1px #001AFF;
+    background-image: linear-gradient(90deg, rgba(3, 4, 37, 1) 0%, rgba(20, 22, 96, 1) 43%, rgba(19, 25, 215, 1) 100%);
+    z-index: 1;
+    color: white;
+    padding-left: 30px;
+    font-family: "Montserrat", sans-serif;
+    outline: none;
+}
+
+/* инпут (подсветка) */
+.ninth-block-form-input-border {
+    width: 345px;
+    height: 63px;
+    position: absolute;
+    padding: 0px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    border-radius: 100px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(20, 22, 96, 1) 35%, rgba(50, 58, 255, 1) 100%);
+    border: none;
+}
+
+/* кнопки навигационные */
+.footer-buttons-1-main,
+.footer-buttons-1-catalog {
+    transition: 0.5s;
+    border: none;
+    background-color: #060845;
+    color: white;
+}
+
+.footer-buttons-1-main:hover,
+.footer-buttons-1-catalog:hover {
+    -moz-text-shadow: 0 0 10px #001aff;
+    -webkit-text-shadow: 0 0 10px #001AFF;
+    text-shadow: 0 0 10px #001AFF;
+    transform: translateY(3px);
+}
+
+/* кноки соц сетей */
+.messengers {
+    width: 50px;
+    height: 50px;
+    background: rgb(3, 4, 37);
+    background: linear-gradient(148deg, rgba(3, 4, 37, 1) 2%, rgba(14, 19, 163, 1) 100%);
+    border-radius: 50%;
+    box-shadow: 0 5px 15px 0 #001AFF;
+    transition: 0.5s;
+    border: none;
+}
+
+.messengers:hover {
+    box-shadow: 8px 4px 25px 1px #001AFF;
+    transform: translateY(3px);
+}
+
+
+/* ------------------дополнительно на странице------------------ */
+
+::selection {
+    color: #5258ff;
+}
+
+::-webkit-scrollbar {
+    background-color: #060845;
+    width: 2px;
+    height: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: white;
+    width: 2px;
+    height: 2px;
+}
+
+
+/* ------------------модальные окна------------------ */
+
+/* само модальное окно */
+dialog{
+    border: none;
+    padding: 0;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+dialog::backdrop{
+    background-color: rgba(119, 128, 175, 0.672);
+    backdrop-filter: blur(10px);
+}
+
+/* закругление верхней, нижней части модального окна */
+.white {
+    background-color: white;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.white-2 {
+    background-color: white;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+/* контейнер */
+.container-2 {
+    width: 947px;
+    margin: 0 auto;
+}
+
+/* форма (карточка) */
+.modal-second-block-form-card {
+    width: 947px;
+    /* height: 476px; */
+    border: none;
+    /* box-shadow: 16px 8px 25px 1px #001AFF; */
+    background-image: linear-gradient(90deg, rgba(3, 4, 37, 1) 0%, rgba(20, 22, 96, 1) 43%, rgba(19, 25, 215, 1) 100%);
+    z-index: 1;
+}
+
+/* форма-подсветка  формы (карточки) */
+.modal-second-block-form-border {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(20, 22, 96, 1) 35%, rgba(50, 58, 255, 1) 100%);
+    border: none;
+}
+
+/* инпут */
+.modal-second-block-form-input {
+    width: 430px;
+    height: 60px;
+    border-radius: 100px;
+    border: none;
+    box-shadow: 16px 8px 25px 1px #001AFF;
+    background-image: linear-gradient(90deg, rgba(3, 4, 37, 1) 0%, rgba(20, 22, 96, 1) 43%, rgba(19, 25, 215, 1) 100%);
+    z-index: 1;
+    color: white;
+    padding-left: 30px;
+    font-family: "Montserrat", sans-serif;
+    outline: none;
+}
+
+/* инпут (подсветка) */
+.modal-second-block-form-input-border {
+    width: 433px;
+    height: 63px;
+    position: absolute;
+    padding: 0px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    border-radius: 100px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(20, 22, 96, 1) 35%, rgba(50, 58, 255, 1) 100%);
+    border: none;
+}
+
+/* кнопка */
+.button-modal,
+.button-modal-2,
+.button-modal-3,
+.button-modal-4,
+.button-modal-5 {
+    width: 377px;
+    height: 63px;
+    text-decoration: none;
+    border-radius: 100px;
+    border: none;
+    box-shadow: 16px 8px 25px 1px #001AFF;
+    transition: 500ms;
+    background-image: linear-gradient(90deg, rgba(3, 4, 37, 1) 0%, rgba(20, 22, 96, 1) 43%, rgba(19, 25, 215, 1) 100%);
+    transition: 500ms;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.button-modal::after,
+.button-modal-2::after,
+.button-modal-3::after,
+.button-modal-4::after,
+.button-modal-5::after {
+    width: 374px;
+    height: 58px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: 'Создать аккаунт';
+    font-size: 20px;
+    color: #eee;
+    border-radius: 100px;
+    background-color: rgb(3, 4, 37);
+    transition: 500ms;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+.button-modal:hover::after,
+.button-modal-2:hover::after,
+.button-modal-3:hover::after,
+.button-modal-4:hover::after,
+.button-modal-5:hover::after {
+    font-size: 20px;
+    background-color: transparent;
+}
+
+.button-modal:focus,
+.button-modal-2:focus,
+.button-modal-3:focus,
+.button-modal-4:focus,
+.button-modal-5:focus {
+    outline: none;
+}
+
+.button-modal:active,
+.button-modal-2:active,
+.button-modal-3:active,
+.button-modal-4:active,
+.button-modal-5:active {
+    transform: translateY(10px);
+}
+
+/* название второй кнопки */
+.button-modal-2::after {
+    content: 'Авторизоваться';
+}
+
+/* название третьей кнопки */
+.button-modal-3::after {
+    content: 'Продолжить';
+}
+
+/* название четвертой кнопки */
+.button-modal-4::after {
+    content: 'Сохранить';
+}
+
+/* название пятой кнопки */
+.button-modal-5::after {
+    content: 'Оформить заказ';
+}
+
+/* карточка для поздравления */
+.modal-content-form-border {
+    width: 641px;
+    height: 120px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(20, 22, 96, 1) 35%, rgba(50, 58, 255, 1) 100%);
+    border: none;
+}
+
+.modal-content-block-form-card {
+    width: 649px;
+    height: 122px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 16px 8px 25px 1px #001AFF;
+    background-image: linear-gradient(90deg, rgba(3, 4, 37, 1) 0%, rgba(20, 22, 96, 1) 43%, rgba(19, 25, 215, 1) 100%);
+    z-index: 1;
+}
+
+/* круг */
+.modal-second-block-card-content-round {
+    width: 125px;
+    height: 125px;
+    border-radius: 100px;
+    border: none;
+    box-shadow: 16px 8px 25px 1px #001AFF;
+    background-image: linear-gradient(90deg, rgba(3, 4, 37, 1) 0%, rgba(20, 22, 96, 1) 43%, rgba(19, 25, 215, 1) 100%);
+    z-index: 1;
+}
+
+/* круг-подсветка */
+.modal-second-block-card-content-border {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(20, 22, 96, 1) 35%, rgba(50, 58, 255, 1) 100%);
+    border: none;
+
+    background-image: conic-gradient(transparent, rgb(124, 137, 255), transparent 50%);
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(1turn);
+    }
+}
